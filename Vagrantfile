@@ -3,7 +3,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.require_version ">= 1.5.0"
-unless Vagrant.has_plugin?("vagrant-vbguest1")
+unless Vagrant.has_plugin?("vagrant-vbguest")
   raise "Vagrant plugin vagrant-vbguest is missing. Run `vagrant plugin install vagrant-vbguest`"
 end
 Vagrant.configure(2) do |config|
